@@ -2,8 +2,8 @@
 name: "Project CopenHagen"
 title: "CopenHagen"
 description: "A Physics Blog-Article_news website"
-logo: 'assets/images/new-logo.jpg'
-favicon: 'assets/images/logo.png'
+logo: 'assets/images/new-logo.png'
+favicon: 'assets/images/new-logo.png'
 baseurl: ""
 url: "https://fuzzballlessnerd.github.io"
 # google_analytics: 'UA-46278016-1'
