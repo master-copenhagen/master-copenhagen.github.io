@@ -1,0 +1,2376 @@
+- month: 1
+  objects:
+  - common_name: ''
+    constellation: Lepus
+    mag: 8.0
+    name: M79
+    size: 9' x 9'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Auriga
+    mag: 6.4
+    name: M38
+    size: 21' x 21'
+    type: Open Cluster
+  - common_name: Crab Nebula
+    constellation: Taurus
+    mag: 8.4
+    name: M1
+    size: 6' x 4'
+    type: Supernova Remnant
+  - common_name: Orion Nebula
+    constellation: Orion
+    mag: 4
+    name: M42
+    size: 66' x 60'
+    type: Nebula
+  - common_name: ''
+    constellation: Orion
+    mag: 9
+    name: M43
+    size: 20' x 15'
+    type: Nebula
+  - common_name: ''
+    constellation: Auriga
+    mag: 6
+    name: M36
+    size: 12' x 12'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Orion
+    mag: 8
+    name: M78
+    size: 8' x 6'
+    type: Reflection Nebula
+  - common_name: ''
+    constellation: Auriga
+    mag: 5.6
+    name: M37
+    size: 24' x 24'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Gemini
+    mag: 5.1
+    name: M35
+    size: 28' x 28'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Canis Major
+    mag: 4.5
+    name: M41
+    size: 38' x 38'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Monoceros
+    mag: 5.9
+    name: M50
+    size: 16' x 16'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Puppis
+    mag: 4.4
+    name: M47
+    size: 30' x 30'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Puppis
+    mag: 6.1
+    name: M46
+    size: 27' x 27'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Puppis
+    mag: 6.2
+    name: M93
+    size: 22' x 22'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Hydra
+    mag: 5.8
+    name: M48
+    size: 54' x 54'
+    type: Open Cluster
+  - common_name: Praesepe
+    constellation: Cancer
+    mag: 3.1
+    name: M44
+    size: 95' x 95'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Cancer
+    mag: 6.9
+    name: M67
+    size: 30' x 30'
+    type: Open Cluster
+  - common_name: "Bode\xB4s Galaxy"
+    constellation: Ursa Major
+    mag: 6.8
+    name: M81
+    size: 27' x 14'
+    type: Spiral Galaxy
+  - common_name: Cigar Galaxy
+    constellation: Ursa Major
+    mag: 8.4
+    name: M82
+    size: 11' x 4'
+    type: Irregular Galaxy
+  - common_name: ''
+    constellation: Leo
+    mag: 9.7
+    name: M95
+    size: 3' x 3'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Leo
+    mag: 9.2
+    name: M96
+    size: 8' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Leo
+    mag: 9.3
+    name: M105
+    size: 5' x 5'
+    type: Elliptical Galaxy
+- month: 2
+  objects:
+  - common_name: ''
+    constellation: Gemini
+    mag: 5.1
+    name: M35
+    size: 28' x 28'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Canis Major
+    mag: 4.5
+    name: M41
+    size: 38' x 38'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Monoceros
+    mag: 5.9
+    name: M50
+    size: 16' x 16'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Puppis
+    mag: 4.4
+    name: M47
+    size: 30' x 30'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Puppis
+    mag: 6.1
+    name: M46
+    size: 27' x 27'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Puppis
+    mag: 6.2
+    name: M93
+    size: 22' x 22'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Hydra
+    mag: 5.8
+    name: M48
+    size: 54' x 54'
+    type: Open Cluster
+  - common_name: Praesepe
+    constellation: Cancer
+    mag: 3.1
+    name: M44
+    size: 95' x 95'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Cancer
+    mag: 6.9
+    name: M67
+    size: 30' x 30'
+    type: Open Cluster
+  - common_name: "Bode\xB4s Galaxy"
+    constellation: Ursa Major
+    mag: 6.8
+    name: M81
+    size: 27' x 14'
+    type: Spiral Galaxy
+  - common_name: Cigar Galaxy
+    constellation: Ursa Major
+    mag: 8.4
+    name: M82
+    size: 11' x 4'
+    type: Irregular Galaxy
+  - common_name: ''
+    constellation: Leo
+    mag: 9.7
+    name: M95
+    size: 3' x 3'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Leo
+    mag: 9.2
+    name: M96
+    size: 8' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Leo
+    mag: 9.3
+    name: M105
+    size: 5' x 5'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Ursa Major
+    mag: 10.0
+    name: M108
+    size: 9' x 2'
+    type: Spiral Galaxy
+  - common_name: Owl Nebula
+    constellation: Ursa Major
+    mag: 11.2
+    name: M97
+    size: 3' x 3'
+    type: Planetary Nebula
+  - common_name: ''
+    constellation: Leo
+    mag: 9.3
+    name: M65
+    size: 10' x 3'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Leo
+    mag: 9
+    name: M66
+    size: 9' x 4'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Ursa Major
+    mag: 9.8
+    name: M109
+    size: 8' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 10.1
+    name: M98
+    size: 10' x 3'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 9.8
+    name: M99
+    size: 5' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Canes Venatici
+    mag: 8.3
+    name: M106
+    size: 19' x 7'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.7
+    name: M61
+    size: 7' x 6'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Ursa Major
+    mag: 8
+    name: M40
+    size: ''
+    type: Asterism
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 9.4
+    name: M100
+    size: 7' x 6'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.3
+    name: M84
+    size: 7' x 6'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 9.2
+    name: M85
+    size: 7' x 5'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.2
+    name: M86
+    size: 9' x 6'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 8.4
+    name: M49
+    size: 10' x 8'
+    type: Elliptical Galaxy
+  - common_name: Virgo A
+    constellation: Virgo
+    mag: 8.6
+    name: M87
+    size: 8' x 7'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 9.5
+    name: M88
+    size: 7' x 4'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 10.2
+    name: M91
+    size: 5' x 4'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.8
+    name: M89
+    size: 5' x 5'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.5
+    name: M90
+    size: 10' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.8
+    name: M58
+    size: 6' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Hydra
+    mag: 8.2
+    name: M68
+    size: 12' x 12'
+    type: Globular Cluster
+  - common_name: Sombrero
+    constellation: Virgo
+    mag: 8.3
+    name: M104
+    size: 9' x 4'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.8
+    name: M59
+    size: 5' x 4'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 8.8
+    name: M60
+    size: 7' x 6'
+    type: Elliptical Galaxy
+  - common_name: "Cat\u2019s Eye Galaxy"
+    constellation: Canes Venatici
+    mag: 8.1
+    name: M94
+    size: 11' x 9'
+    type: Spiral Galaxy
+  - common_name: Blackeye Galaxy
+    constellation: Coma Berenices
+    mag: 8.5
+    name: M64
+    size: 10' x 5'
+    type: Spiral Galaxy
+- month: 3
+  objects:
+  - common_name: ''
+    constellation: Hydra
+    mag: 5.8
+    name: M48
+    size: 54' x 54'
+    type: Open Cluster
+  - common_name: Praesepe
+    constellation: Cancer
+    mag: 3.1
+    name: M44
+    size: 95' x 95'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Cancer
+    mag: 6.9
+    name: M67
+    size: 30' x 30'
+    type: Open Cluster
+  - common_name: "Bode\xB4s Galaxy"
+    constellation: Ursa Major
+    mag: 6.8
+    name: M81
+    size: 27' x 14'
+    type: Spiral Galaxy
+  - common_name: Cigar Galaxy
+    constellation: Ursa Major
+    mag: 8.4
+    name: M82
+    size: 11' x 4'
+    type: Irregular Galaxy
+  - common_name: ''
+    constellation: Leo
+    mag: 9.7
+    name: M95
+    size: 3' x 3'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Leo
+    mag: 9.2
+    name: M96
+    size: 8' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Leo
+    mag: 9.3
+    name: M105
+    size: 5' x 5'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Ursa Major
+    mag: 10.0
+    name: M108
+    size: 9' x 2'
+    type: Spiral Galaxy
+  - common_name: Owl Nebula
+    constellation: Ursa Major
+    mag: 11.2
+    name: M97
+    size: 3' x 3'
+    type: Planetary Nebula
+  - common_name: ''
+    constellation: Leo
+    mag: 9.3
+    name: M65
+    size: 10' x 3'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Leo
+    mag: 9
+    name: M66
+    size: 9' x 4'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Ursa Major
+    mag: 9.8
+    name: M109
+    size: 8' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 10.1
+    name: M98
+    size: 10' x 3'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 9.8
+    name: M99
+    size: 5' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Canes Venatici
+    mag: 8.3
+    name: M106
+    size: 19' x 7'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.7
+    name: M61
+    size: 7' x 6'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Ursa Major
+    mag: 8
+    name: M40
+    size: ''
+    type: Asterism
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 9.4
+    name: M100
+    size: 7' x 6'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.3
+    name: M84
+    size: 7' x 6'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 9.2
+    name: M85
+    size: 7' x 5'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.2
+    name: M86
+    size: 9' x 6'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 8.4
+    name: M49
+    size: 10' x 8'
+    type: Elliptical Galaxy
+  - common_name: Virgo A
+    constellation: Virgo
+    mag: 8.6
+    name: M87
+    size: 8' x 7'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 9.5
+    name: M88
+    size: 7' x 4'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 10.2
+    name: M91
+    size: 5' x 4'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.8
+    name: M89
+    size: 5' x 5'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.5
+    name: M90
+    size: 10' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.8
+    name: M58
+    size: 6' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Hydra
+    mag: 8.2
+    name: M68
+    size: 12' x 12'
+    type: Globular Cluster
+  - common_name: Sombrero
+    constellation: Virgo
+    mag: 8.3
+    name: M104
+    size: 9' x 4'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.8
+    name: M59
+    size: 5' x 4'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 8.8
+    name: M60
+    size: 7' x 6'
+    type: Elliptical Galaxy
+  - common_name: "Cat\u2019s Eye Galaxy"
+    constellation: Canes Venatici
+    mag: 8.1
+    name: M94
+    size: 11' x 9'
+    type: Spiral Galaxy
+  - common_name: Blackeye Galaxy
+    constellation: Coma Berenices
+    mag: 8.5
+    name: M64
+    size: 10' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 7.7
+    name: M53
+    size: 13' x 13'
+    type: Globular Cluster
+  - common_name: Sunflower Galaxy
+    constellation: Canes Venatici
+    mag: 8.6
+    name: M63
+    size: 13' x 7'
+    type: Spiral Galaxy
+  - common_name: Whirlpool
+    constellation: Canes Venatici
+    mag: 8.1
+    name: M51
+    size: 11' x 8'
+    type: Spiral Galaxy
+  - common_name: Southern Pinwheel
+    constellation: Hydra
+    mag: 7.6
+    name: M83
+    size: 13' x 12'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Canes Venatici
+    mag: 6.4
+    name: M3
+    size: 16' x 16'
+    type: Globular Cluster
+  - common_name: Pinwheel
+    constellation: Ursa Major
+    mag: 7.7
+    name: M101
+    size: 29' x 27'
+    type: Spiral Galaxy
+- month: 4
+  objects:
+  - common_name: ''
+    constellation: Leo
+    mag: 9.7
+    name: M95
+    size: 3' x 3'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Leo
+    mag: 9.2
+    name: M96
+    size: 8' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Leo
+    mag: 9.3
+    name: M105
+    size: 5' x 5'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Ursa Major
+    mag: 10.0
+    name: M108
+    size: 9' x 2'
+    type: Spiral Galaxy
+  - common_name: Owl Nebula
+    constellation: Ursa Major
+    mag: 11.2
+    name: M97
+    size: 3' x 3'
+    type: Planetary Nebula
+  - common_name: ''
+    constellation: Leo
+    mag: 9.3
+    name: M65
+    size: 10' x 3'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Leo
+    mag: 9
+    name: M66
+    size: 9' x 4'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Ursa Major
+    mag: 9.8
+    name: M109
+    size: 8' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 10.1
+    name: M98
+    size: 10' x 3'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 9.8
+    name: M99
+    size: 5' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Canes Venatici
+    mag: 8.3
+    name: M106
+    size: 19' x 7'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.7
+    name: M61
+    size: 7' x 6'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Ursa Major
+    mag: 8
+    name: M40
+    size: ''
+    type: Asterism
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 9.4
+    name: M100
+    size: 7' x 6'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.3
+    name: M84
+    size: 7' x 6'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 9.2
+    name: M85
+    size: 7' x 5'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.2
+    name: M86
+    size: 9' x 6'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 8.4
+    name: M49
+    size: 10' x 8'
+    type: Elliptical Galaxy
+  - common_name: Virgo A
+    constellation: Virgo
+    mag: 8.6
+    name: M87
+    size: 8' x 7'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 9.5
+    name: M88
+    size: 7' x 4'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 10.2
+    name: M91
+    size: 5' x 4'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.8
+    name: M89
+    size: 5' x 5'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.5
+    name: M90
+    size: 10' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.8
+    name: M58
+    size: 6' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Hydra
+    mag: 8.2
+    name: M68
+    size: 12' x 12'
+    type: Globular Cluster
+  - common_name: Sombrero
+    constellation: Virgo
+    mag: 8.3
+    name: M104
+    size: 9' x 4'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.8
+    name: M59
+    size: 5' x 4'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 8.8
+    name: M60
+    size: 7' x 6'
+    type: Elliptical Galaxy
+  - common_name: "Cat\u2019s Eye Galaxy"
+    constellation: Canes Venatici
+    mag: 8.1
+    name: M94
+    size: 11' x 9'
+    type: Spiral Galaxy
+  - common_name: Blackeye Galaxy
+    constellation: Coma Berenices
+    mag: 8.5
+    name: M64
+    size: 10' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 7.7
+    name: M53
+    size: 13' x 13'
+    type: Globular Cluster
+  - common_name: Sunflower Galaxy
+    constellation: Canes Venatici
+    mag: 8.6
+    name: M63
+    size: 13' x 7'
+    type: Spiral Galaxy
+  - common_name: Whirlpool
+    constellation: Canes Venatici
+    mag: 8.1
+    name: M51
+    size: 11' x 8'
+    type: Spiral Galaxy
+  - common_name: Southern Pinwheel
+    constellation: Hydra
+    mag: 7.6
+    name: M83
+    size: 13' x 12'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Canes Venatici
+    mag: 6.4
+    name: M3
+    size: 16' x 16'
+    type: Globular Cluster
+  - common_name: Pinwheel
+    constellation: Ursa Major
+    mag: 7.7
+    name: M101
+    size: 29' x 27'
+    type: Spiral Galaxy
+  - common_name: Spindle
+    constellation: Draco
+    mag: 9.9
+    name: M102
+    size: 5' x 2'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Serpens
+    mag: 5.8
+    name: M5
+    size: 17' x 17'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Scorpius
+    mag: 7.2
+    name: M80
+    size: 9' x 9'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Scorpius
+    mag: 5.9
+    name: M4
+    size: 26' x 26'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 8.1
+    name: M107
+    size: 10' x 10'
+    type: Globular Cluster
+  - common_name: Great Hercules Cluster
+    constellation: Hercules
+    mag: 5.9
+    name: M13
+    size: 17' x 17'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 6.6
+    name: M12
+    size: 14' x 14'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 6.6
+    name: M10
+    size: 15' x 15'
+    type: Globular Cluster
+- month: 5
+  objects:
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 10.1
+    name: M98
+    size: 10' x 3'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 9.8
+    name: M99
+    size: 5' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Canes Venatici
+    mag: 8.3
+    name: M106
+    size: 19' x 7'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.7
+    name: M61
+    size: 7' x 6'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Ursa Major
+    mag: 8
+    name: M40
+    size: ''
+    type: Asterism
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 9.4
+    name: M100
+    size: 7' x 6'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.3
+    name: M84
+    size: 7' x 6'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 9.2
+    name: M85
+    size: 7' x 5'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.2
+    name: M86
+    size: 9' x 6'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 8.4
+    name: M49
+    size: 10' x 8'
+    type: Elliptical Galaxy
+  - common_name: Virgo A
+    constellation: Virgo
+    mag: 8.6
+    name: M87
+    size: 8' x 7'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 9.5
+    name: M88
+    size: 7' x 4'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 10.2
+    name: M91
+    size: 5' x 4'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.8
+    name: M89
+    size: 5' x 5'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.5
+    name: M90
+    size: 10' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.8
+    name: M58
+    size: 6' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Hydra
+    mag: 8.2
+    name: M68
+    size: 12' x 12'
+    type: Globular Cluster
+  - common_name: Sombrero
+    constellation: Virgo
+    mag: 8.3
+    name: M104
+    size: 9' x 4'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 9.8
+    name: M59
+    size: 5' x 4'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Virgo
+    mag: 8.8
+    name: M60
+    size: 7' x 6'
+    type: Elliptical Galaxy
+  - common_name: "Cat\u2019s Eye Galaxy"
+    constellation: Canes Venatici
+    mag: 8.1
+    name: M94
+    size: 11' x 9'
+    type: Spiral Galaxy
+  - common_name: Blackeye Galaxy
+    constellation: Coma Berenices
+    mag: 8.5
+    name: M64
+    size: 10' x 5'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Coma Berenices
+    mag: 7.7
+    name: M53
+    size: 13' x 13'
+    type: Globular Cluster
+  - common_name: Sunflower Galaxy
+    constellation: Canes Venatici
+    mag: 8.6
+    name: M63
+    size: 13' x 7'
+    type: Spiral Galaxy
+  - common_name: Whirlpool
+    constellation: Canes Venatici
+    mag: 8.1
+    name: M51
+    size: 11' x 8'
+    type: Spiral Galaxy
+  - common_name: Southern Pinwheel
+    constellation: Hydra
+    mag: 7.6
+    name: M83
+    size: 13' x 12'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Canes Venatici
+    mag: 6.4
+    name: M3
+    size: 16' x 16'
+    type: Globular Cluster
+  - common_name: Pinwheel
+    constellation: Ursa Major
+    mag: 7.7
+    name: M101
+    size: 29' x 27'
+    type: Spiral Galaxy
+  - common_name: Spindle
+    constellation: Draco
+    mag: 9.9
+    name: M102
+    size: 5' x 2'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Serpens
+    mag: 5.8
+    name: M5
+    size: 17' x 17'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Scorpius
+    mag: 7.2
+    name: M80
+    size: 9' x 9'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Scorpius
+    mag: 5.9
+    name: M4
+    size: 26' x 26'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 8.1
+    name: M107
+    size: 10' x 10'
+    type: Globular Cluster
+  - common_name: Great Hercules Cluster
+    constellation: Hercules
+    mag: 5.9
+    name: M13
+    size: 17' x 17'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 6.6
+    name: M12
+    size: 14' x 14'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 6.6
+    name: M10
+    size: 15' x 15'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 6.6
+    name: M62
+    size: 14' x 14'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 7.2
+    name: M19
+    size: 14' x 14'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Hercules
+    mag: 6.5
+    name: M92
+    size: 11' x 11'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 7.9
+    name: M9
+    size: 9' x 9'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 7.6
+    name: M14
+    size: 12' x 12'
+    type: Globular Cluster
+  - common_name: Butterfly Cluster
+    constellation: Scorpius
+    mag: 4.2
+    name: M6
+    size: 15' x 15'
+    type: Open Cluster
+  - common_name: "Ptolemy\xB4s Cluster"
+    constellation: Scorpius
+    mag: 3.3
+    name: M7
+    size: 80' x 80'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 5.5
+    name: M23
+    size: 27' x 27'
+    type: Open Cluster
+  - common_name: Trifid Nebula
+    constellation: Sagittarius
+    mag: 8.5
+    name: M20
+    size: 29' x 27'
+    type: Nebula
+  - common_name: Lagoon Nebula
+    constellation: Sagittarius
+    mag: 5.8
+    name: M8
+    size: 90' x 40'
+    type: Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 5.9
+    name: M21
+    size: 13' x 13'
+    type: Open Cluster
+  - common_name: Milky Way patch
+    constellation: Sagittarius
+    mag: 4.5
+    name: M24
+    size: 90' x 90'
+    type: Asterism
+  - common_name: Eagle Nebula
+    constellation: Serpens
+    mag: 6
+    name: M16
+    size: 7' x 7'
+    type: Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 6.9
+    name: M18
+    size: 9' x 9'
+    type: Open Cluster
+  - common_name: Omega Nebula
+    constellation: Sagittarius
+    mag: 7
+    name: M17
+    size: 46' x 37'
+    type: Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 6.9
+    name: M28
+    size: 11' x 11'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 7.7
+    name: M69
+    size: 7' x 7'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 4.6
+    name: M25
+    size: 32' x 32'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 5.1
+    name: M22
+    size: 24' x 24'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 8.1
+    name: M70
+    size: 8' x 8'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Scutum
+    mag: 8
+    name: M26
+    size: 15' x 15'
+    type: Open Cluster
+  - common_name: Wild Duck Cluster
+    constellation: Scutum
+    mag: 5.8
+    name: M11
+    size: 14' x 14'
+    type: Open Cluster
+  - common_name: Ring Nebula
+    constellation: Lyra
+    mag: 9
+    name: M57
+    size: 1' x 1'
+    type: Planetary Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 7.7
+    name: M54
+    size: 9' x 9'
+    type: Globular Cluster
+- month: 6
+  objects:
+  - common_name: Pinwheel
+    constellation: Ursa Major
+    mag: 7.7
+    name: M101
+    size: 29' x 27'
+    type: Spiral Galaxy
+  - common_name: Spindle
+    constellation: Draco
+    mag: 9.9
+    name: M102
+    size: 5' x 2'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Serpens
+    mag: 5.8
+    name: M5
+    size: 17' x 17'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Scorpius
+    mag: 7.2
+    name: M80
+    size: 9' x 9'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Scorpius
+    mag: 5.9
+    name: M4
+    size: 26' x 26'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 8.1
+    name: M107
+    size: 10' x 10'
+    type: Globular Cluster
+  - common_name: Great Hercules Cluster
+    constellation: Hercules
+    mag: 5.9
+    name: M13
+    size: 17' x 17'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 6.6
+    name: M12
+    size: 14' x 14'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 6.6
+    name: M10
+    size: 15' x 15'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 6.6
+    name: M62
+    size: 14' x 14'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 7.2
+    name: M19
+    size: 14' x 14'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Hercules
+    mag: 6.5
+    name: M92
+    size: 11' x 11'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 7.9
+    name: M9
+    size: 9' x 9'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 7.6
+    name: M14
+    size: 12' x 12'
+    type: Globular Cluster
+  - common_name: Butterfly Cluster
+    constellation: Scorpius
+    mag: 4.2
+    name: M6
+    size: 15' x 15'
+    type: Open Cluster
+  - common_name: "Ptolemy\xB4s Cluster"
+    constellation: Scorpius
+    mag: 3.3
+    name: M7
+    size: 80' x 80'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 5.5
+    name: M23
+    size: 27' x 27'
+    type: Open Cluster
+  - common_name: Trifid Nebula
+    constellation: Sagittarius
+    mag: 8.5
+    name: M20
+    size: 29' x 27'
+    type: Nebula
+  - common_name: Lagoon Nebula
+    constellation: Sagittarius
+    mag: 5.8
+    name: M8
+    size: 90' x 40'
+    type: Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 5.9
+    name: M21
+    size: 13' x 13'
+    type: Open Cluster
+  - common_name: Milky Way patch
+    constellation: Sagittarius
+    mag: 4.5
+    name: M24
+    size: 90' x 90'
+    type: Asterism
+  - common_name: Eagle Nebula
+    constellation: Serpens
+    mag: 6
+    name: M16
+    size: 7' x 7'
+    type: Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 6.9
+    name: M18
+    size: 9' x 9'
+    type: Open Cluster
+  - common_name: Omega Nebula
+    constellation: Sagittarius
+    mag: 7
+    name: M17
+    size: 46' x 37'
+    type: Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 6.9
+    name: M28
+    size: 11' x 11'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 7.7
+    name: M69
+    size: 7' x 7'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 4.6
+    name: M25
+    size: 32' x 32'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 5.1
+    name: M22
+    size: 24' x 24'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 8.1
+    name: M70
+    size: 8' x 8'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Scutum
+    mag: 8
+    name: M26
+    size: 15' x 15'
+    type: Open Cluster
+  - common_name: Wild Duck Cluster
+    constellation: Scutum
+    mag: 5.8
+    name: M11
+    size: 14' x 14'
+    type: Open Cluster
+  - common_name: Ring Nebula
+    constellation: Lyra
+    mag: 9
+    name: M57
+    size: 1' x 1'
+    type: Planetary Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 7.7
+    name: M54
+    size: 9' x 9'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Lyra
+    mag: 8.2
+    name: M56
+    size: 7' x 7'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 7
+    name: M55
+    size: 19' x 19'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagitta
+    mag: 8.3
+    name: M71
+    size: 7' x 7'
+    type: Globular Cluster
+  - common_name: Dumbbell Nebula
+    constellation: Vulpecula
+    mag: 8.1
+    name: M27
+    size: 8' x 4'
+    type: Planetary Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 8.6
+    name: M75
+    size: 6' x 6'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Cygnus
+    mag: 6.6
+    name: M29
+    size: 7' x 7'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Aquarius
+    mag: 9.4
+    name: M72
+    size: 6' x 6'
+    type: Globular Cluster
+  - common_name: 4 Star asterism
+    constellation: Aquarius
+    mag: 10
+    name: M73
+    size: ''
+    type: Asterism
+- month: 7
+  objects:
+  - common_name: ''
+    constellation: Scorpius
+    mag: 7.2
+    name: M80
+    size: 9' x 9'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Scorpius
+    mag: 5.9
+    name: M4
+    size: 26' x 26'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 8.1
+    name: M107
+    size: 10' x 10'
+    type: Globular Cluster
+  - common_name: Great Hercules Cluster
+    constellation: Hercules
+    mag: 5.9
+    name: M13
+    size: 17' x 17'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 6.6
+    name: M12
+    size: 14' x 14'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 6.6
+    name: M10
+    size: 15' x 15'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 6.6
+    name: M62
+    size: 14' x 14'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 7.2
+    name: M19
+    size: 14' x 14'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Hercules
+    mag: 6.5
+    name: M92
+    size: 11' x 11'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 7.9
+    name: M9
+    size: 9' x 9'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Ophiuchus
+    mag: 7.6
+    name: M14
+    size: 12' x 12'
+    type: Globular Cluster
+  - common_name: Butterfly Cluster
+    constellation: Scorpius
+    mag: 4.2
+    name: M6
+    size: 15' x 15'
+    type: Open Cluster
+  - common_name: "Ptolemy\xB4s Cluster"
+    constellation: Scorpius
+    mag: 3.3
+    name: M7
+    size: 80' x 80'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 5.5
+    name: M23
+    size: 27' x 27'
+    type: Open Cluster
+  - common_name: Trifid Nebula
+    constellation: Sagittarius
+    mag: 8.5
+    name: M20
+    size: 29' x 27'
+    type: Nebula
+  - common_name: Lagoon Nebula
+    constellation: Sagittarius
+    mag: 5.8
+    name: M8
+    size: 90' x 40'
+    type: Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 5.9
+    name: M21
+    size: 13' x 13'
+    type: Open Cluster
+  - common_name: Milky Way patch
+    constellation: Sagittarius
+    mag: 4.5
+    name: M24
+    size: 90' x 90'
+    type: Asterism
+  - common_name: Eagle Nebula
+    constellation: Serpens
+    mag: 6
+    name: M16
+    size: 7' x 7'
+    type: Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 6.9
+    name: M18
+    size: 9' x 9'
+    type: Open Cluster
+  - common_name: Omega Nebula
+    constellation: Sagittarius
+    mag: 7
+    name: M17
+    size: 46' x 37'
+    type: Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 6.9
+    name: M28
+    size: 11' x 11'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 7.7
+    name: M69
+    size: 7' x 7'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 4.6
+    name: M25
+    size: 32' x 32'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 5.1
+    name: M22
+    size: 24' x 24'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 8.1
+    name: M70
+    size: 8' x 8'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Scutum
+    mag: 8
+    name: M26
+    size: 15' x 15'
+    type: Open Cluster
+  - common_name: Wild Duck Cluster
+    constellation: Scutum
+    mag: 5.8
+    name: M11
+    size: 14' x 14'
+    type: Open Cluster
+  - common_name: Ring Nebula
+    constellation: Lyra
+    mag: 9
+    name: M57
+    size: 1' x 1'
+    type: Planetary Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 7.7
+    name: M54
+    size: 9' x 9'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Lyra
+    mag: 8.2
+    name: M56
+    size: 7' x 7'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 7
+    name: M55
+    size: 19' x 19'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagitta
+    mag: 8.3
+    name: M71
+    size: 7' x 7'
+    type: Globular Cluster
+  - common_name: Dumbbell Nebula
+    constellation: Vulpecula
+    mag: 8.1
+    name: M27
+    size: 8' x 4'
+    type: Planetary Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 8.6
+    name: M75
+    size: 6' x 6'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Cygnus
+    mag: 6.6
+    name: M29
+    size: 7' x 7'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Aquarius
+    mag: 9.4
+    name: M72
+    size: 6' x 6'
+    type: Globular Cluster
+  - common_name: 4 Star asterism
+    constellation: Aquarius
+    mag: 10
+    name: M73
+    size: ''
+    type: Asterism
+  - common_name: ''
+    constellation: Pegasus
+    mag: 6.4
+    name: M15
+    size: 12' x 12'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Cygnus
+    mag: 4.6
+    name: M39
+    size: 32' x 32'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Aquarius
+    mag: 6.5
+    name: M2
+    size: 13' x 13'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Capricornus
+    mag: 7.5
+    name: M30
+    size: 11' x 11'
+    type: Globular Cluster
+- month: 8
+  objects:
+  - common_name: ''
+    constellation: Andromeda
+    mag: 8.0
+    name: M110
+    size: 22' x 11'
+    type: Elliptical Galaxy
+  - common_name: Andromeda
+    constellation: Andromeda
+    mag: 3.4
+    name: M31
+    size: 190' x 60'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Andromeda
+    mag: 8.2
+    name: M32
+    size: 9' x 7'
+    type: Elliptical Galaxy
+  - common_name: Trifid Nebula
+    constellation: Sagittarius
+    mag: 8.5
+    name: M20
+    size: 29' x 27'
+    type: Nebula
+  - common_name: Lagoon Nebula
+    constellation: Sagittarius
+    mag: 5.8
+    name: M8
+    size: 90' x 40'
+    type: Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 5.9
+    name: M21
+    size: 13' x 13'
+    type: Open Cluster
+  - common_name: Milky Way patch
+    constellation: Sagittarius
+    mag: 4.5
+    name: M24
+    size: 90' x 90'
+    type: Asterism
+  - common_name: Eagle Nebula
+    constellation: Serpens
+    mag: 6
+    name: M16
+    size: 7' x 7'
+    type: Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 6.9
+    name: M18
+    size: 9' x 9'
+    type: Open Cluster
+  - common_name: Omega Nebula
+    constellation: Sagittarius
+    mag: 7
+    name: M17
+    size: 46' x 37'
+    type: Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 6.9
+    name: M28
+    size: 11' x 11'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 7.7
+    name: M69
+    size: 7' x 7'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 4.6
+    name: M25
+    size: 32' x 32'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 5.1
+    name: M22
+    size: 24' x 24'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 8.1
+    name: M70
+    size: 8' x 8'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Scutum
+    mag: 8
+    name: M26
+    size: 15' x 15'
+    type: Open Cluster
+  - common_name: Wild Duck Cluster
+    constellation: Scutum
+    mag: 5.8
+    name: M11
+    size: 14' x 14'
+    type: Open Cluster
+  - common_name: Ring Nebula
+    constellation: Lyra
+    mag: 9
+    name: M57
+    size: 1' x 1'
+    type: Planetary Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 7.7
+    name: M54
+    size: 9' x 9'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Lyra
+    mag: 8.2
+    name: M56
+    size: 7' x 7'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 7
+    name: M55
+    size: 19' x 19'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Sagitta
+    mag: 8.3
+    name: M71
+    size: 7' x 7'
+    type: Globular Cluster
+  - common_name: Dumbbell Nebula
+    constellation: Vulpecula
+    mag: 8.1
+    name: M27
+    size: 8' x 4'
+    type: Planetary Nebula
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 8.6
+    name: M75
+    size: 6' x 6'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Cygnus
+    mag: 6.6
+    name: M29
+    size: 7' x 7'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Aquarius
+    mag: 9.4
+    name: M72
+    size: 6' x 6'
+    type: Globular Cluster
+  - common_name: 4 Star asterism
+    constellation: Aquarius
+    mag: 10
+    name: M73
+    size: ''
+    type: Asterism
+  - common_name: ''
+    constellation: Pegasus
+    mag: 6.4
+    name: M15
+    size: 12' x 12'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Cygnus
+    mag: 4.6
+    name: M39
+    size: 32' x 32'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Aquarius
+    mag: 6.5
+    name: M2
+    size: 13' x 13'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Capricornus
+    mag: 7.5
+    name: M30
+    size: 11' x 11'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Cassiopeia
+    mag: 6.9
+    name: M52
+    size: 13' x 13'
+    type: Open Cluster
+- month: 9
+  objects:
+  - common_name: ''
+    constellation: Andromeda
+    mag: 8.0
+    name: M110
+    size: 22' x 11'
+    type: Elliptical Galaxy
+  - common_name: Andromeda
+    constellation: Andromeda
+    mag: 3.4
+    name: M31
+    size: 190' x 60'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Andromeda
+    mag: 8.2
+    name: M32
+    size: 9' x 7'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Cassiopeia
+    mag: 7.4
+    name: M103
+    size: 6' x 6'
+    type: Open Cluster
+  - common_name: Triangulum
+    constellation: Triangulum
+    mag: 5.7
+    name: M33
+    size: 71' x 42'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Pisces
+    mag: 9.2
+    name: M74
+    size: 11' x 10'
+    type: Spiral Galaxy
+  - common_name: Little Dumbbell Nebula
+    constellation: Perseus
+    mag: 11.5
+    name: M76
+    size: 2' x 1'
+    type: Planetary Nebula
+  - common_name: ''
+    constellation: Perseus
+    mag: 5.2
+    name: M34
+    size: 35' x 35'
+    type: Open Cluster
+  - common_name: Cetus A
+    constellation: Cetus
+    mag: 8.8
+    name: M77
+    size: 7' x 6'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Sagittarius
+    mag: 8.6
+    name: M75
+    size: 6' x 6'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Cygnus
+    mag: 6.6
+    name: M29
+    size: 7' x 7'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Aquarius
+    mag: 9.4
+    name: M72
+    size: 6' x 6'
+    type: Globular Cluster
+  - common_name: 4 Star asterism
+    constellation: Aquarius
+    mag: 10
+    name: M73
+    size: ''
+    type: Asterism
+  - common_name: ''
+    constellation: Pegasus
+    mag: 6.4
+    name: M15
+    size: 12' x 12'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Cygnus
+    mag: 4.6
+    name: M39
+    size: 32' x 32'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Aquarius
+    mag: 6.5
+    name: M2
+    size: 13' x 13'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Capricornus
+    mag: 7.5
+    name: M30
+    size: 11' x 11'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Cassiopeia
+    mag: 6.9
+    name: M52
+    size: 13' x 13'
+    type: Open Cluster
+- month: 10
+  objects:
+  - common_name: ''
+    constellation: Andromeda
+    mag: 8.0
+    name: M110
+    size: 22' x 11'
+    type: Elliptical Galaxy
+  - common_name: Andromeda
+    constellation: Andromeda
+    mag: 3.4
+    name: M31
+    size: 190' x 60'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Andromeda
+    mag: 8.2
+    name: M32
+    size: 9' x 7'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Cassiopeia
+    mag: 7.4
+    name: M103
+    size: 6' x 6'
+    type: Open Cluster
+  - common_name: Triangulum
+    constellation: Triangulum
+    mag: 5.7
+    name: M33
+    size: 71' x 42'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Pisces
+    mag: 9.2
+    name: M74
+    size: 11' x 10'
+    type: Spiral Galaxy
+  - common_name: Little Dumbbell Nebula
+    constellation: Perseus
+    mag: 11.5
+    name: M76
+    size: 2' x 1'
+    type: Planetary Nebula
+  - common_name: ''
+    constellation: Perseus
+    mag: 5.2
+    name: M34
+    size: 35' x 35'
+    type: Open Cluster
+  - common_name: Cetus A
+    constellation: Cetus
+    mag: 8.8
+    name: M77
+    size: 7' x 6'
+    type: Spiral Galaxy
+  - common_name: Pleiades
+    constellation: Taurus
+    mag: 1.2
+    name: M45
+    size: 110' x 110'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Cassiopeia
+    mag: 6.9
+    name: M52
+    size: 13' x 13'
+    type: Open Cluster
+- month: 11
+  objects:
+  - common_name: ''
+    constellation: Andromeda
+    mag: 8.0
+    name: M110
+    size: 22' x 11'
+    type: Elliptical Galaxy
+  - common_name: Andromeda
+    constellation: Andromeda
+    mag: 3.4
+    name: M31
+    size: 190' x 60'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Andromeda
+    mag: 8.2
+    name: M32
+    size: 9' x 7'
+    type: Elliptical Galaxy
+  - common_name: ''
+    constellation: Cassiopeia
+    mag: 7.4
+    name: M103
+    size: 6' x 6'
+    type: Open Cluster
+  - common_name: Triangulum
+    constellation: Triangulum
+    mag: 5.7
+    name: M33
+    size: 71' x 42'
+    type: Spiral Galaxy
+  - common_name: ''
+    constellation: Pisces
+    mag: 9.2
+    name: M74
+    size: 11' x 10'
+    type: Spiral Galaxy
+  - common_name: Little Dumbbell Nebula
+    constellation: Perseus
+    mag: 11.5
+    name: M76
+    size: 2' x 1'
+    type: Planetary Nebula
+  - common_name: ''
+    constellation: Perseus
+    mag: 5.2
+    name: M34
+    size: 35' x 35'
+    type: Open Cluster
+  - common_name: Cetus A
+    constellation: Cetus
+    mag: 8.8
+    name: M77
+    size: 7' x 6'
+    type: Spiral Galaxy
+  - common_name: Pleiades
+    constellation: Taurus
+    mag: 1.2
+    name: M45
+    size: 110' x 110'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Lepus
+    mag: 8.0
+    name: M79
+    size: 9' x 9'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Auriga
+    mag: 6.4
+    name: M38
+    size: 21' x 21'
+    type: Open Cluster
+  - common_name: Crab Nebula
+    constellation: Taurus
+    mag: 8.4
+    name: M1
+    size: 6' x 4'
+    type: Supernova Remnant
+  - common_name: Orion Nebula
+    constellation: Orion
+    mag: 4
+    name: M42
+    size: 66' x 60'
+    type: Nebula
+  - common_name: ''
+    constellation: Orion
+    mag: 9
+    name: M43
+    size: 20' x 15'
+    type: Nebula
+  - common_name: ''
+    constellation: Auriga
+    mag: 6
+    name: M36
+    size: 12' x 12'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Orion
+    mag: 8
+    name: M78
+    size: 8' x 6'
+    type: Reflection Nebula
+  - common_name: ''
+    constellation: Auriga
+    mag: 5.6
+    name: M37
+    size: 24' x 24'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Gemini
+    mag: 5.1
+    name: M35
+    size: 28' x 28'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Canis Major
+    mag: 4.5
+    name: M41
+    size: 38' x 38'
+    type: Open Cluster
+- month: 12
+  objects:
+  - common_name: ''
+    constellation: Perseus
+    mag: 5.2
+    name: M34
+    size: 35' x 35'
+    type: Open Cluster
+  - common_name: Cetus A
+    constellation: Cetus
+    mag: 8.8
+    name: M77
+    size: 7' x 6'
+    type: Spiral Galaxy
+  - common_name: Pleiades
+    constellation: Taurus
+    mag: 1.2
+    name: M45
+    size: 110' x 110'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Lepus
+    mag: 8.0
+    name: M79
+    size: 9' x 9'
+    type: Globular Cluster
+  - common_name: ''
+    constellation: Auriga
+    mag: 6.4
+    name: M38
+    size: 21' x 21'
+    type: Open Cluster
+  - common_name: Crab Nebula
+    constellation: Taurus
+    mag: 8.4
+    name: M1
+    size: 6' x 4'
+    type: Supernova Remnant
+  - common_name: Orion Nebula
+    constellation: Orion
+    mag: 4
+    name: M42
+    size: 66' x 60'
+    type: Nebula
+  - common_name: ''
+    constellation: Orion
+    mag: 9
+    name: M43
+    size: 20' x 15'
+    type: Nebula
+  - common_name: ''
+    constellation: Auriga
+    mag: 6
+    name: M36
+    size: 12' x 12'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Orion
+    mag: 8
+    name: M78
+    size: 8' x 6'
+    type: Reflection Nebula
+  - common_name: ''
+    constellation: Auriga
+    mag: 5.6
+    name: M37
+    size: 24' x 24'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Gemini
+    mag: 5.1
+    name: M35
+    size: 28' x 28'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Canis Major
+    mag: 4.5
+    name: M41
+    size: 38' x 38'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Monoceros
+    mag: 5.9
+    name: M50
+    size: 16' x 16'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Puppis
+    mag: 4.4
+    name: M47
+    size: 30' x 30'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Puppis
+    mag: 6.1
+    name: M46
+    size: 27' x 27'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Puppis
+    mag: 6.2
+    name: M93
+    size: 22' x 22'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Hydra
+    mag: 5.8
+    name: M48
+    size: 54' x 54'
+    type: Open Cluster
+  - common_name: Praesepe
+    constellation: Cancer
+    mag: 3.1
+    name: M44
+    size: 95' x 95'
+    type: Open Cluster
+  - common_name: ''
+    constellation: Cancer
+    mag: 6.9
+    name: M67
+    size: 30' x 30'
+    type: Open Cluster

@@ -1,0 +1,614 @@
+---
+layout: default
+title: News
+---
+
+<section class="news-page" style="margin-top: 100px;">
+  <!-- Calendar -->
+  <div class="calendar">
+    <div class="calendar-header">
+      <button onclick="prevMonth()">&lt;</button>
+      <h3 id="calendar-month"></h3>
+      <button onclick="nextMonth()"> &gt;</button>
+    </div>
+    <div id="calendar-grid" class="calendar-grid"></div>
+    
+    <!-- Constellations Section -->
+    <div class="constellations-section" style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #eee;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1em; color: #444;">Bright Constellations (21:00 - 04:00)</h4>
+      <p id="constellation-list" style="margin: 0; font-size: 0.9em; color: #666;"></p>
+    </div>
+
+    <!-- Messier Marathon Section -->
+    <div class="messier-section" style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #eee;">
+      <h4 style="margin: 0 0 10px 0; font-size: 1em; color: #444;">Messier Marathon (21:00 - 04:00)</h4>
+      <div id="messier-list" style="margin: 0; font-size: 0.9em; color: #666; line-height: 1.6;"></div>
+    </div>
+  </div>
+
+  <!-- News feed -->
+  <div class="news-feed">
+    <h2 id="news-heading">News for this Month</h2>
+    <div id="news-list">
+      <!-- Content populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- Pass posts data into JS -->
+<script>
+  // Combined posts for Calendar dots
+  const posts = [
+    {% for post in site.posts %}
+      {
+        title: {{ post.title | jsonify }},
+        url: "{{ post.url | relative_url }}",
+        date: "{{ post.date | date: '%Y-%m-%d' }}",
+        category: "{{ post.categories | first }}"
+      },
+    {% endfor %}
+    {% if site.data.news %}
+      {% for news in site.data.news %}
+        {
+          title: {{ news.title | jsonify }},
+          url: null,
+          date: "{{ news.date | date: '%Y-%m-%d' }}",
+          category: "{{ news.category | default: 'news' }}" 
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    {% endif %}
+  ];
+
+  // Specific News Data for the Feed
+  const allNews = [
+    {% if site.data.news %}
+      {% assign sorted_news = site.data.news | sort: "date" %}
+      {% for news in sorted_news %}
+        {
+          title: {{ news.title | jsonify }},
+          date: "{{ news.date | date: '%Y-%m-%d' }}",
+          displayDate: "{{ news.date | date: '%b %d' }}",
+          description: {{ news.description | jsonify }}
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    {% endif %}
+  ];
+
+  // Constellation Data
+  const constellationsData = [
+    {% if site.data.constellations %}
+      {% for item in site.data.constellations %}
+        {
+          month: {{ item.month }},
+          names: {{ item.names | jsonify }}
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    {% endif %}
+  ];
+
+  // Messier Data
+  const messierData = [
+    {% if site.data.messier %}
+      {% for item in site.data.messier %}
+        {
+          month: {{ item.month }},
+          objects: [
+            {% for obj in item.objects %}
+              {
+                name: {{ obj.name | jsonify }},
+                common_name: {{ obj.common_name | jsonify }},
+                type: {{ obj.type | jsonify }},
+                constellation: {{ obj.constellation | jsonify }},
+                mag: {{ obj.mag | jsonify }},
+                size: {{ obj.size | jsonify }}
+              }{% unless forloop.last %},{% endunless %}
+            {% endfor %}
+          ]
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    {% endif %}
+  ];
+</script>
+
+<!-- SunCalc Library -->
+<script src="{{ 'assets/js/suncalc.js' | relative_url }}"></script>
+
+<script>
+  const categoriesColors = {
+    news: "green",
+    pictures: "purple",
+    default: "gray"
+  };
+
+  let currentDate = new Date();
+
+  // Bangalore Coordinates
+  const LAT = 12.9716;
+  const LON = 77.5946;
+
+  function formatTime(date) {
+    if (!date) return "--:--";
+    try {
+      const ist = new Intl.DateTimeFormat('en-GB', { 
+          timeZone: 'Asia/Kolkata', 
+          hour: '2-digit', minute: '2-digit', hour12: false 
+      }).format(date);
+      
+      const gmt = new Intl.DateTimeFormat('en-GB', { 
+          timeZone: 'GMT', 
+          hour: '2-digit', minute: '2-digit', hour12: false 
+      }).format(date);
+      
+      return `${ist} IST (${gmt} GMT)`;
+    } catch (e) {
+      return date.toLocaleTimeString(); 
+    }
+  }
+
+  function renderNews() {
+    const month = currentDate.getMonth(); // 0-11
+    const year = currentDate.getFullYear();
+    
+    // Filter news for current month/year
+    const monthlyNews = allNews.filter(item => {
+      const d = new Date(item.date);
+      return d.getMonth() === month && d.getFullYear() === year;
+    });
+
+    const newsList = document.getElementById("news-list");
+    const newsHeading = document.getElementById("news-heading");
+    
+    // Update Heading
+    const monthName = currentDate.toLocaleString("default", { month: "long" });
+    newsHeading.innerText = `News for ${monthName} ${year}`;
+
+    newsList.innerHTML = "";
+
+    if (monthlyNews.length === 0) {
+      newsList.innerHTML = "<p>No news for this month.</p>";
+      return;
+    }
+
+    monthlyNews.forEach(item => {
+      const div = document.createElement("div");
+      div.className = "news-item";
+      
+      div.innerHTML = `
+        <div class="news-date">${item.displayDate}</div>
+        <div class="news-content">
+          <h4>${item.title}</h4>
+          <p>${item.description}</p>
+        </div>
+      `;
+      newsList.appendChild(div);
+    });
+  }
+
+  function renderConstellations() {
+    const month = currentDate.getMonth() + 1; // 1-12
+    const listEl = document.getElementById("constellation-list");
+    
+    const data = constellationsData.find(c => c.month === month);
+    
+    if (data && data.names && data.names.length > 0) {
+      listEl.innerText = data.names.join(", ");
+    } else {
+      listEl.innerText = "No data available.";
+    }
+  }
+
+  function renderMessier() {
+    const month = currentDate.getMonth() + 1; // 1-12
+    const listEl = document.getElementById("messier-list");
+    listEl.innerHTML = "";
+    
+    const data = messierData.find(m => m.month === month);
+    
+    if (data && data.objects && data.objects.length > 0) {
+      data.objects.forEach((obj, index) => {
+        const span = document.createElement("span");
+        
+        // Display Text: Just the code (e.g., M43)
+        span.innerText = obj.name;
+        
+        // Tooltip:
+        // Common Name (if any)
+        // Type
+        // Constellation
+        // Magnitude: ...
+        // Dimensions: ...
+        let tooltip = "";
+        if (obj.common_name) tooltip += `${obj.common_name}\n`;
+        tooltip += `${obj.type}\n`;
+        tooltip += `${obj.constellation}\n`;
+        tooltip += `Magnitude: ${obj.mag}\n`;
+        tooltip += `Dimensions: ${obj.size}`;
+        
+        span.title = tooltip;
+        span.style.cursor = "help";
+        span.style.borderBottom = "1px dotted #999";
+        
+        listEl.appendChild(span);
+        
+        if (index < data.objects.length - 1) {
+          listEl.appendChild(document.createTextNode(", "));
+        }
+      });
+    } else {
+      listEl.innerText = "No Messiers culminating in this time frame.";
+    }
+  }
+
+  function renderCalendar() {
+    const month = currentDate.getMonth();
+    const year = currentDate.getFullYear();
+
+    // Update News Feed, Constellations & Messier whenever calendar renders
+    renderNews();
+    renderConstellations();
+    renderMessier();
+
+    // Month label
+    document.getElementById("calendar-month").innerText =
+      currentDate.toLocaleString("default", { month: "long" }) + " " + year;
+
+    // First day and days count
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    const grid = document.getElementById("calendar-grid");
+    grid.innerHTML = "";
+
+    // Weekday headers
+    const weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    weekdays.forEach(day => {
+      const dayHeader = document.createElement("div");
+      dayHeader.className = "calendar-weekday";
+      dayHeader.innerText = day;
+      grid.appendChild(dayHeader);
+    });
+
+    // Empty slots for days before 1st
+    for (let i = 0; i < firstDay; i++) {
+      grid.appendChild(document.createElement("div"));
+    }
+
+    // Actual days
+    for (let day = 1; day <= daysInMonth; day++) {
+      const cell = document.createElement("div");
+      cell.className = "calendar-day";
+      cell.innerText = day;
+
+      const dateObj = new Date(year, month, day, 12, 0, 0); // Noon
+      
+      // Moon Phase Illumination
+      let percent = 0;
+      let moonIllum = null;
+      if (window.SunCalc) {
+        moonIllum = SunCalc.getMoonIllumination(dateObj);
+        percent = Math.round(moonIllum.fraction * 100);
+      }
+      
+      // Gradient background: Light gray represents illumination, dark represents shaded
+      cell.style.background = `linear-gradient(90deg, #555 ${percent}%, #1a1a1a ${percent}%)`;
+      // Ensure text is readable against both light and dark sides of the gradient
+      cell.style.color = "#fff";
+      cell.style.textShadow = "1px 1px 2px rgba(0,0,0,0.8)";
+
+      // Tooltip with Sun/Moon times
+      if (window.SunCalc && moonIllum) {
+        const sunTimes = SunCalc.getTimes(dateObj, LAT, LON);
+        const moonTimes = SunCalc.getMoonTimes(dateObj, LAT, LON);
+        
+        const tooltip = [
+          `Sun Rise: ${formatTime(sunTimes.sunrise)}`,
+          `Sun Set: ${formatTime(sunTimes.sunset)}`,
+          `Moon Rise: ${formatTime(moonTimes.rise)}`,
+          `Moon Set: ${formatTime(moonTimes.set)}`
+        ];
+
+        // Check for specific Moon Phase
+        // SunCalc phases: 0=New, 0.25=First Quarter, 0.5=Full, 0.75=Last Quarter
+        const p = moonIllum.phase;
+        const threshold = 0.03;
+        
+        if (p < threshold || p > 1 - threshold) tooltip.push("New Moon");
+        else if (Math.abs(p - 0.25) < threshold) tooltip.push("First Quarter");
+        else if (Math.abs(p - 0.50) < threshold) tooltip.push("Full Moon");
+        else if (Math.abs(p - 0.75) < threshold) tooltip.push("Last Quarter");
+        
+        cell.title = tooltip.join('\n');
+      }
+
+      // Match posts for this date
+      const dateKey = `${year}-${String(month+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+      const todaysPosts = posts.filter(p => p.date === dateKey);
+
+      if (todaysPosts.length > 0) {
+        const dots = document.createElement("div");
+        dots.className = "dots";
+        todaysPosts.forEach(p => {
+          const dot = document.createElement("span");
+          dot.style.backgroundColor = categoriesColors[p.category] || categoriesColors.default;
+          // Append post title to tooltip if it exists
+          if (cell.title) {
+             // cell.title += '\n\n' + p.title; 
+          } else {
+             cell.title = p.title;
+          }
+          // The dot itself has a title too, but the cell title covers the whole area
+          dots.appendChild(dot);
+        });
+        cell.appendChild(dots);
+
+        // Make date clickable if there is a valid link
+        const validLinkPost = todaysPosts.filter(p => p.url)[0];
+        if (validLinkPost) {
+          cell.onclick = () => {
+            window.location.href = validLinkPost.url;
+          };
+          cell.style.cursor = "pointer";
+        }
+      }
+
+      grid.appendChild(cell);
+    }
+  }
+
+  function prevMonth() {
+    currentDate.setMonth(currentDate.getMonth() - 1);
+    renderCalendar();
+  }
+
+  function nextMonth() {
+    currentDate.setMonth(currentDate.getMonth() + 1);
+    renderCalendar();
+  }
+
+  document.addEventListener("DOMContentLoaded", renderCalendar);
+</script>
+
+<!-- CSS -->
+<style>
+.news-page {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Calendar */
+.calendar {
+  background: var(--card-bg, #1e1e1e);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color, #333);
+  align-self: start;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-header button {
+  background-color: var(--gray-bg, #2a2a2a);
+  color: var(--text-color, #e0e0e0);
+  border: 1px solid var(--border-color, #444);
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.calendar-header button:hover {
+  background-color: var(--border-color, #444);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-weekday {
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8em;
+  color: var(--text-muted, #a0a0a0);
+  padding-bottom: 5px;
+}
+
+.calendar-day {
+  padding: 8px;
+  background: var(--card-bg, #222); /* the gradient logic might override this */
+  border: 1px solid var(--border-color, #444);
+  color: #fff; /* Ensure text is readable if gradient is light */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.9em;
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-top: 3px;
+}
+
+.dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* News feed */
+.news-feed h2 {
+  margin-bottom: 20px;
+  color: var(--heading-color, #fff);
+}
+
+.news-item {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--border-color, #333);
+  padding: 10px 0;
+}
+
+.news-date {
+  flex: 0 0 80px;
+  font-weight: bold;
+  color: var(--text-color, #e0e0e0);
+}
+
+.news-content {
+  flex: 1;
+}
+
+.news-content h4 {
+  margin: 0;
+  font-size: 1.1em;
+  color: var(--heading-color, #fff);
+}
+
+.news-thumb {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 8px 0;
+}
+
+.news-content p {
+  margin: 5px 0 0;
+  color: var(--text-muted, #a0a0a0);
+  font-size: 0.9em;
+}
+
+/* Specific text elements under Calendar */
+.constellations-section h4, .messier-section h4 {
+  color: var(--heading-color, #fff) !important;
+}
+
+.constellations-section p, .messier-section div {
+  color: var(--text-muted, #a0a0a0) !important;
+}
+
+.constellations-section, .messier-section {
+  border-top: 1px solid var(--border-color, #333) !important;
+}
+
+@media (max-width: 768px) {
+  .news-page {
+    grid-template-columns: 1fr !important;
+    padding: 10px !important;
+    gap: 16px !important;
+  }
+
+  .calendar {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  .calendar-grid {
+    gap: 3px !important;
+  }
+
+  .calendar-day {
+    padding: 4px 2px !important;
+    font-size: 0.75em !important;
+  }
+
+  .calendar-weekday {
+    font-size: 0.65em !important;
+  }
+
+  .news-date {
+    flex: 0 0 55px !important;
+    font-size: 0.85em !important;
+  }
+
+  .news-content h4 {
+    font-size: 1em !important;
+  }
+}
+
+/* Touch-friendly tooltip (shown on tap, hidden on release) */
+#touch-tooltip {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  background: rgba(20,20,20,0.95);
+  color: #e0e0e0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  padding: 0.55rem 0.75rem;
+  border-radius: 7px;
+  border: 1px solid #444;
+  max-width: min(280px, 80vw);
+  white-space: pre-wrap;
+  pointer-events: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+}
+</style>
+
+<div id="touch-tooltip"></div>
+<script>
+(function () {
+  var tip = document.getElementById('touch-tooltip');
+  var hideTimer;
+
+  function showTip(text, touch) {
+    clearTimeout(hideTimer);
+    var x = touch.clientX;
+    var y = touch.clientY;
+    tip.textContent = text;
+    tip.style.display = 'block';
+    // Position above the finger; clamp to viewport edges
+    var tw = tip.offsetWidth;
+    var th = tip.offsetHeight;
+    var left = Math.min(Math.max(x - tw / 2, 8), window.innerWidth - tw - 8);
+    var top  = y - th - 14;
+    if (top < 8) top = y + 22; // flip below if too close to top
+    tip.style.left = left + 'px';
+    tip.style.top  = top  + 'px';
+  }
+
+  function hideTip() {
+    hideTimer = setTimeout(function () { tip.style.display = 'none'; }, 200);
+  }
+
+  // Attach touch listeners to any element that has a title attribute.
+  // Called once after the calendar/messier renders.
+  window.attachTouchTooltips = function (root) {
+    var els = (root || document).querySelectorAll('[title]');
+    els.forEach(function (el) {
+      if (el._touchTooltipBound) return;
+      el._touchTooltipBound = true;
+      el.addEventListener('touchstart', function (e) {
+        var text = el.title;
+        if (!text) return;
+        showTip(text, e.touches[0]);
+        // Don't preventDefault — allow scroll to still work
+      }, { passive: true });
+      el.addEventListener('touchend',    hideTip, { passive: true });
+      el.addEventListener('touchcancel', hideTip, { passive: true });
+    });
+  };
+
+  // Re-attach after every calendar render (calendar rebuilds DOM each time)
+  document.addEventListener('DOMContentLoaded', function () {
+    // MutationObserver watches for new [title] elements added by renderCalendar()
+    var observer = new MutationObserver(function () {
+      window.attachTouchTooltips();
+    });
+    var calEl = document.getElementById('calendar') || document.body;
+    observer.observe(calEl, { childList: true, subtree: true });
+    window.attachTouchTooltips();
+  });
+})();
+</script>

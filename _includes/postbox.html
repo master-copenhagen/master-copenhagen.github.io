@@ -1,0 +1,95 @@
+<!-- begin post -->
+{% assign authors = post.authors | default: post.author %}
+{% assign authors_list = authors | split: ',' %}
+
+<div class="col-lg-4 col-md-6 mb-30px card-group">
+    <div class="card h-100" style="position:relative; overflow:hidden;">
+        {% if post.image %}
+        <div class="maxthumb">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                {% if site.lazyimages == "enabled" %}
+                    <img class="img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="{% if post.image contains '://' %}{{ post.image }}{% else %}{{ site.baseurl }}{{ post.image | remove_first: '/' | prepend: '/' }}{% endif %}" alt="{{ post.title }}">
+                {% else %}
+                    <img class="img-fluid" src="{% if post.image contains '://' %}{{ post.image }}{% else %}{{ site.baseurl }}{{ post.image | remove_first: '/' | prepend: '/' }}{% endif %}" alt="{{ post.title }}">
+                {% endif %}
+            </a>
+        </div>
+        {% endif %}
+
+        <div class="card-body">
+            {% if post.tags %}
+            <div class="card-tags-row">
+                {% for tag in post.tags %}
+                <a href="{{ site.baseurl }}/tags#{{ tag | replace: ' ', '-' }}" class="card-tag-pill">{{ tag }}</a>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            <h2 class="card-title">
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            </h2>
+            {% assign clean_excerpt = post.excerpt | strip_html | strip %}
+            {% unless clean_excerpt contains "Author:" %}
+            <p class="card-text">{{ clean_excerpt | truncatewords: 18 }}</p>
+            {% endunless %}
+        </div>
+
+        <div class="card-footer">
+            <div class="card-meta-row">
+                <span class="post-name">
+                    {% if post.author %}{{ post.author | strip }}{% else %}Unknown Author{% endif %}
+                </span>
+                <span class="post-meta-sep">·</span>
+                <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.card-tags-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 0.65rem;
+}
+.card-tag-pill {
+    display: inline-block;
+    padding: 0.18rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: rgba(255, 140, 0, 0.15);
+    color: rgba(255, 190, 80, 0.9);
+    border: 1px solid rgba(255, 140, 0, 0.3);
+    transition: background 0.2s ease, color 0.2s ease;
+}
+.card-tag-pill:hover {
+    background: rgba(255, 140, 0, 0.30);
+    color: #fff;
+    text-decoration: none;
+}
+.card-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.8rem;
+    color: rgba(200, 200, 215, 0.65);
+}
+.card-meta-row .post-name {
+    color: rgba(220, 220, 230, 0.85);
+    font-weight: 500;
+}
+.card-meta-row .post-meta-sep {
+    color: rgba(255, 140, 0, 0.6);
+    font-size: 0.9rem;
+    line-height: 1;
+}
+.card-meta-row .post-date {
+    color: rgba(200, 200, 215, 0.65);
+}
+</style>
+<!-- end post -->

@@ -1,0 +1,234 @@
+---
+layout: default
+title: Pictures
+---
+
+<section class="recent-posts" style="margin-top: 100px;">
+  <div class="section-title">
+    <h2><span>Pictures</span></h2>
+  </div>
+
+  <!-- Centering wrapper -->
+  <div class="pictures-wrapper" style="text-align: center;">
+    <div class="pictures-container" id="masonry-gallery">
+      {% for post in site.posts %}
+        {% if post.categories contains "pictures" %}
+          <div class="picture-inner-rectangle" onclick="openModal('{{ post.image | relative_url }}', '{{ post.title | escape }}', '{{ post.description | escape }}', '{{ post.author | escape }}')">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="pictures-image" />
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Pagination -->
+<div class="bottompagination">
+  <div class="pointerup">
+    <i class="fa fa-caret-up"></i>
+  </div>
+  <span class="navigation" role="navigation">
+    {% include pagination.html %}
+  </span>
+</div>
+
+<!-- Modal -->
+<div id="photoModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <div class="modal-content-container">
+    <img class="modal-image" id="modalImg" />
+    <div class="modal-description" id="modalCaption"></div>
+  </div>
+</div>
+
+<!-- Masonry CSS -->
+<style>
+/* Wrapper centers the masonry container */
+.pictures-wrapper {
+  text-align: center;
+}
+
+/* Masonry container needs to be inline-block for centering */
+.pictures-container {
+  max-width: 1200px;
+  padding: 20px;
+
+  display: inline-block;  /* allow centering by wrapper */
+  text-align: left;       /* reset text alignment inside */
+  /* Removed flex and justify-content */
+  /* Removed gap */
+}
+
+.picture-inner-rectangle {
+  background-color: transparent !important;
+  border: 1px solid gray !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 0 !important;
+
+  width: calc(25% - 15px);
+  /* Removed float */
+  display: block;
+}
+
+/* Remove margin-right rules as Masonry handles spacing */
+.picture-inner-rectangle:nth-child(4n) {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .pictures-wrapper {
+    width: 100% !important;
+    overflow-x: hidden !important;
+    padding: 0 !important;
+  }
+  .pictures-container {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 4px !important;
+  }
+  .picture-inner-rectangle {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    left: auto !important;
+    top: auto !important;
+    margin-bottom: 3px !important;
+  }
+}
+
+.pictures-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.pictures-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-top: 60px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content-container {
+  display: flex;
+  background-color: #1a1a1a;
+  max-width: 80%;
+  max-height: 80%;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.modal-image {
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
+.modal-description {
+  width: 40%;
+  font-size: 18px;
+  color: #ccc;
+  overflow-y: auto;
+}
+
+#modalCaption {
+  margin-top: 15px;
+  text-align: left;
+  color: #ccc;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .picture-inner-rectangle {
+    width: calc(50% - 10px);
+    margin-right: 0; /* no margin needed */
+  }
+}
+
+@media (max-width: 600px) {
+  .picture-inner-rectangle {
+    width: 100%;
+    margin-right: 0;
+  }
+  .modal-content-container {
+    flex-direction: column;
+    max-width: 95%;
+  }
+  .modal-image {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .modal-description {
+    width: 100%;
+  }
+}
+</style>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth <= 768) return; // let CSS handle mobile layout
+    var grid = document.querySelector('#masonry-gallery');
+    imagesLoaded(grid, function () {
+      new Masonry(grid, {
+        itemSelector: '.picture-inner-rectangle',
+        columnWidth: '.picture-inner-rectangle',
+        percentPosition: true,
+        gutter: 20,
+        fitWidth: true
+      });
+    });
+  });
+
+  function openModal(imageSrc, title, description, author) {
+    const modal = document.getElementById("photoModal");
+    const modalImg = document.getElementById("modalImg");
+    const caption = document.getElementById("modalCaption");
+
+    modal.style.display = "flex";
+    modalImg.src = imageSrc;
+    caption.innerHTML = `<strong>${title}</strong><br><br><em>Photo by: ${author}</em><br>${description}<br>`;
+  }
+
+  function closeModal() {
+    document.getElementById("photoModal").style.display = "none";
+  }
+</script>

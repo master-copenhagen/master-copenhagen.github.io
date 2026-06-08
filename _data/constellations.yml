@@ -1,0 +1,24 @@
+- month: 1
+  names: ["Orion", "Gemini", "Canis Major", "Leo", "Ursa Major", "Auriga"]
+- month: 2
+  names: ["Gemini", "Leo", "Canis Major", "Ursa Major", "Cancer", "Hydra"]
+- month: 3
+  names: ["Leo", "Virgo", "Ursa Major", "Bootes", "Centaurus", "Corvus"]
+- month: 4
+  names: ["Virgo", "Bootes", "Libra", "Centaurus", "Crux", "Leo"]
+- month: 5
+  names: ["Libra", "Scorpius", "Bootes", "Hercules", "Centaurus", "Ophiuchus"]
+- month: 6
+  names: ["Scorpius", "Sagittarius", "Lyra", "Aquila", "Hercules", "Ophiuchus"]
+- month: 7
+  names: ["Scorpius", "Sagittarius", "Lyra", "Aquila", "Cygnus", "Capricornus"]
+- month: 8
+  names: ["Sagittarius", "Lyra", "Aquila", "Cygnus", "Capricornus", "Pegasus"]
+- month: 9
+  names: ["Cygnus", "Pegasus", "Capricornus", "Aquarius", "Piscis Austrinus", "Andromeda"]
+- month: 10
+  names: ["Pegasus", "Andromeda", "Cassiopeia", "Pisces", "Cetus", "Aries"]
+- month: 11
+  names: ["Andromeda", "Perseus", "Cassiopeia", "Taurus", "Auriga", "Orion"]
+- month: 12
+  names: ["Orion", "Taurus", "Auriga", "Gemini", "Canis Major", "Perseus"]

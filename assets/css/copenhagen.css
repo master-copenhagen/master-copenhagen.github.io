@@ -1,0 +1,328 @@
+/* ============================================
+   COPENHAGEN DESIGN SYSTEM
+   Remove individual sections as needed
+   ============================================ */
+
+
+/* ── 1. READING PROGRESS BAR ────────────────
+   Remove: delete this block + the JS at bottom
+   of default.html labelled "Progress Bar JS"
+   ─────────────────────────────────────────── */
+#reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff6600, #ffaa00, #ff6600);
+  box-shadow: 0 0 10px rgba(255, 120, 0, 0.8);
+  z-index: 9999;
+  transition: width 0.1s linear;
+}
+
+
+/* ── 2. GLASSMORPHISM BLOG CARDS ────────────
+   Remove: delete this block
+   ─────────────────────────────────────────── */
+.card,
+.postbox,
+.listrecent .col-md-4 > div,
+.listfeaturedtag .wrapfooter,
+.listrecent .card {
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 14px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.card:hover,
+.postbox:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 12px 40px rgba(255, 100, 0, 0.15) !important;
+  border-color: rgba(255, 140, 50, 0.3) !important;
+}
+
+.card-body,
+.card-footer,
+.card-footer.bg-white {
+  background: transparent !important;
+}
+
+.card-title a,
+.card-title {
+  color: white !important;
+}
+
+.card-text,
+.card-footer span,
+.card-footer a {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+
+/* ── 3. STAR PARTICLE DRIFT ─────────────────
+   Remove: delete this block + canvas element
+   added to default.html labelled "Star Canvas"
+   ─────────────────────────────────────────── */
+#star-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+/* ── 4. ORBITRON HEADINGS SITEWIDE ──────────
+   Remove: delete this block
+   ─────────────────────────────────────────── */
+h1, h2, h3,
+.navbar-brand .brand-text,
+.posttitle,
+.section-title h2 {
+  font-family: 'Orbitron', sans-serif !important;
+  letter-spacing: 0.05em;
+}
+
+.posttitle {
+  font-size: 2rem !important;
+  color: white !important;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.9);
+}
+
+.section-title h2 a {
+  color: white !important;
+}
+
+.mainheading h1 {
+  color: white !important;
+}
+
+
+/* ── 5. GLOWING NAV HOVER ───────────────────
+   Remove: delete this block
+   ─────────────────────────────────────────── */
+.navbar .nav-link {
+  position: relative;
+  transition: color 0.3s ease, text-shadow 0.3s ease !important;
+  letter-spacing: 0.08em;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffaa00 !important;
+  text-shadow:
+    0 0 8px rgba(255, 170, 0, 0.8),
+    0 0 20px rgba(255, 120, 0, 0.4) !important;
+}
+
+.navbar .nav-item.active .nav-link {
+  color: #ffaa00 !important;
+  text-shadow: 0 0 8px rgba(255, 170, 0, 0.8) !important;
+}
+
+
+/* ── 6. ARTICLE HERO BANNER ─────────────────
+   Remove: delete this block
+   ─────────────────────────────────────────── */
+.post-hero-banner {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+}
+
+.post-hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.45);
+}
+
+.post-hero-banner .post-hero-title {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 30px rgba(0,0,0,1);
+  line-height: 1.4;
+}
+
+.post-hero-banner .post-hero-meta {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+
+/* ── 7. BACK TO TOP BUTTON ──────────────────
+   Remove: delete this block + the button element
+   and JS in default.html labelled "Back to Top JS"
+   ─────────────────────────────────────────── */
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 140, 50, 0.5);
+  box-shadow: 0 0 16px rgba(255, 100, 0, 0.3);
+  color: #ffaa00;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+#back-to-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#back-to-top:hover {
+  box-shadow: 0 0 28px rgba(255, 140, 0, 0.7);
+  border-color: rgba(255, 180, 50, 0.9);
+  color: white;
+}
+
+
+/* ── GLOBAL CLEANUP ─────────────────────────
+   Makes all page backgrounds transparent
+   so the video shows through everywhere
+   ─────────────────────────────────────────── */
+body,
+.site-content,
+.main-content,
+.container,
+.jumbotron {
+  background: transparent !important;
+}
+
+.article-post,
+.article-post p,
+.article-post li {
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
+.article-post h1,
+.article-post h2,
+.article-post h3 {
+  color: white !important;
+}
+
+.after-post-cats a,
+.after-post-tags a {
+  background: rgba(255,140,50,0.15) !important;
+  border: 1px solid rgba(255,140,50,0.3) !important;
+  color: #ffaa00 !important;
+  border-radius: 20px !important;
+  padding: 3px 12px !important;
+}
+
+/* ── 8. CARD HOVER TAGS ─────────────────────
+   Append this entire block to the bottom of
+   your existing copenhagen.css file.
+   ─────────────────────────────────────────── */
+
+/* Tag overlay — uses opacity/visibility so it
+   does NOT need overflow:hidden to stay hidden */
+.card-tag-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 32px 14px 14px;
+  background: linear-gradient(to top, rgba(5, 5, 15, 0.96) 55%, transparent);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.28s ease, visibility 0.28s ease;
+  z-index: 5;
+}
+
+.card:hover .card-tag-hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-tag-pill {
+  background: rgba(255, 140, 50, 0.12);
+  border: 1px solid rgba(255, 140, 50, 0.4);
+  color: #ffaa00;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.7rem;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+/* ── 9. CARD TITLE & FOOTER ──────────────────
+   Fixes blue title, styles author + date
+   ─────────────────────────────────────────── */
+
+.card-title {
+  font-size: 1rem !important;
+  line-height: 1.45;
+  margin-bottom: 0.5rem;
+}
+
+.card-title a {
+  color: white !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease;
+}
+
+.card-title a:hover {
+  color: #ffaa00 !important;
+}
+
+.card-text {
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 0.83rem !important;
+  line-height: 1.55;
+}
+
+.wrapfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-name {
+  color: rgba(255, 255, 255, 0.65) !important;
+  font-size: 0.82rem;
+}
+
+.post-date {
+  color: rgba(255, 255, 255, 0.35) !important;
+  font-size: 0.74rem;
+  letter-spacing: 0.03em;
+}
